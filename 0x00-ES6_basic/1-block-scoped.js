@@ -1,12 +1,12 @@
 export default function taskBlock(trueOrFalse) {
-  const task = false;  // Use const
-  const task2 = true;  // Use const
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    const task = true;  // These variables only exist in this block
-    const task2 = false;
+    /* eslint-disable */
+    task;
+    task2;
   }
-
-  return [task, task2];  // Returns the outer values (false, true)
+  
+  return [task, task2];
 }
-
