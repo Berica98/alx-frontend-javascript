@@ -1,5 +1,6 @@
-function getListStudentIds(list) {
-  if (Array.isArray(list)) {
+function getListStudentIds(array) {
+  if (!Array.isArray(array.))
+	{
     return list.map((obj) => obj.id);
   }
   return [];
