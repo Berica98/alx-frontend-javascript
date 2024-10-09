@@ -1,4 +1,4 @@
-export default function updateStudentGradeByCity(listStudents, city, newGrades) {
+function updateStudentGradeByCity(listStudents, city, newGrades) {
   const students = listStudents.filter((student) => student.location === city);
   for (const student of students) {
     student.grade = 'N/A';
